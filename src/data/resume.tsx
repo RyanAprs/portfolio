@@ -7,7 +7,8 @@ export const DATA = {
   url: "",
   location: "Indonesia",
   locationLink: "https://www.google.com/maps/place/indonesia",
-  description: "Fullstack Developer. I love building things and helping people",
+  description:
+    "Fullstack Developer. I love building things and helping people.",
   summary:
     "Passionate and skilled web developer with extensive experience in ReactJS, NextJS, and NodeJS. Highly proficient in building scalable and efficient web applications, with a strong background in full-stack development. Experienced in working with cloud services, blockchain technologies, and AI-driven projects. Adept at leading and participating in hackathons and competitions, with a proven track record of developing innovative digital solutions.",
   avatarUrl: "/me.jpg",
