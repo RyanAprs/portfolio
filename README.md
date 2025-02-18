@@ -1,4 +1,4 @@
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)]
+# Ryan's Portfolio
 
 Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
 
