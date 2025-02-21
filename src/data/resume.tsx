@@ -4,7 +4,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Ryan Adi Prasetyo",
   initials: "RAP",
-  url: "",
+  cvUrl: "/ryanadiprasetyo.pdf",
   location: "Indonesia",
   locationLink: "https://www.google.com/maps/place/indonesia",
   description:

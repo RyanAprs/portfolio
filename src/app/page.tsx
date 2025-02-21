@@ -1,10 +1,14 @@
+"use client";
+
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
+import { Download } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -36,6 +40,24 @@ export default function Page() {
               </Avatar>
             </BlurFade>
           </div>
+          <BlurFade delay={BLUR_FADE_DELAY}>
+            <Button
+              variant="default"
+              size="lg"
+              className="group flex items-center gap-2 transition-all hover:bg-primary/90 w-1/3"
+              asChild
+            >
+              <a
+                href={DATA.cvUrl}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="h-4 w-4 transition-transform group-hover:-translate-y-1" />
+                <span>Download CV</span>
+              </a>
+            </Button>
+          </BlurFade>
         </div>
       </section>
       <section id="about">
