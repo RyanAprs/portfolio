@@ -8,7 +8,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
-import { Download } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -48,13 +47,12 @@ export default function Page() {
               asChild
             >
               <a
-                href={DATA.cvUrl}
+                href={DATA.url}
                 download
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Download className="h-4 w-4 transition-transform group-hover:-translate-y-1" />
-                <span>Download CV</span>
+                <span>Checkout My CV</span>
               </a>
             </Button>
           </BlurFade>
