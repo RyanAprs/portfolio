@@ -1,14 +1,14 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { FileBadge, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Ryan Adi Prasetyo",
   initials: "RAP",
-  url: "https://drive.google.com/file/d/1AJEAIcVRuHjFv9I2UGBlzptVnsuFa1aY/view?usp=sharing",
+  url: "https://drive.google.com/file/d/1UMUCRsYaytWNCF_WhIIiQjB5ApOP3JJW/view?usp=sharing",
   location: "Indonesia",
   locationLink: "https://www.google.com/maps/place/indonesia",
   description:
-    "Fullstack Developer. I love building things and helping people.",
+    "Fullstack Developer & Web3 Enthusiast. I love building things and helping people.",
   summary:
     "Passionate and skilled web developer with extensive experience in ReactJS, NextJS, and NodeJS. Highly proficient in building scalable and efficient web applications, with a strong background in full-stack development. Experienced in working with cloud services, blockchain technologies, and AI-driven projects. Adept at leading and participating in hackathons and competitions, with a proven track record of developing innovative digital solutions.",
   avatarUrl: "/me.jpg",
@@ -63,6 +63,17 @@ export const DATA = {
       description:
         "I developed the PRBCare application using ReactJS as the frontend, collaborating with my supervisor and team to build a Single Page Application (SPA) that enhances the efficiency of health services. The application improves user experience by providing automatic notifications for patients, ensuring they stay informed about their health schedules. Additionally, I implemented a responsive design and integrated Progressive Web App (PWA) features to optimize accessibility and performance across various devices.",
     },
+    {
+      company: "PT Winnicode Indonesia",
+      href: "https://atomic.finance",
+      badges: [],
+      location: "Remote",
+      title: "Fullstack Developer - Internship",
+      logoUrl: "/",
+      start: "Feb 2025",
+      end: "May 2025",
+      description: "",
+    },
   ],
   education: [
     {
@@ -71,7 +82,7 @@ export const DATA = {
       degree: "Bachelor's Degree of Informatics Engineering",
       logoUrl: "/Unimma.png",
       start: "2022",
-      end: "2026",
+      end: "now",
     },
     {
       school: "Hacktiv8",
@@ -154,6 +165,56 @@ export const DATA = {
       ],
       image: "/TickeTix.png",
       video: "",
+    },
+    {
+      title: "Jelajah Nusantara",
+      href: "",
+      dates: "May 2025",
+      active: true,
+      description:
+        "Jelajah Nusantara is a fun, interactive website that helps users explore Indonesia’s rich nature, culture, and history. It features a vibrant homepage, clickable interactive map, cultural facts, historical insights, and a team intro. Designed to be child-friendly and colorful, it's perfect for schools, museums, e-learning, and cultural tourism.",
+      technologies: ["React", "TailwindCSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://jelajahnusantara.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/RyanAprs/KSBN_SI_2PX",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/jelajah.png",
+      video: "",
+    },
+  ],
+  achievementAndCertifications: [
+    {
+      title: "Intro to Software Engineering",
+      issuer: "PT Revolusi Citra Edukasi",
+      dates: "March 2023",
+      image: "/SE_RevoU.jpg",
+    },
+    {
+      title: "Backend Development and APIs",
+      issuer: "FreeCodeCamp",
+      dates: "January 2024",
+      image: "/sertifikat_freecodecamp.jpg",
+    },
+    {
+      title: "MSIB Batch 7 - ReactJS For Front End Website Developer",
+      issuer: "PT Hacktivate Teknologi Indonesia",
+      dates: "December 2024",
+      image: "/Sertifikat_hacktiv8.jpg",
+    },
+    {
+      title:
+        "3rd Winner of Web Design at Festival Sistem Informasi 3.0 IPI Garut",
+      issuer: "Institut Pendidikan Indonesia",
+      dates: "May 2025",
+      image: "/juara3.jpg",
     },
   ],
 } as const;
