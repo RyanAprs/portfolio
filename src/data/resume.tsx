@@ -20,6 +20,7 @@ export const DATA = {
     "Postgres",
     "MongoDB",
     "Docker",
+    "Github",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
