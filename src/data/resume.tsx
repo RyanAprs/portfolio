@@ -4,7 +4,7 @@ import { FileBadge, HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Ryan Adi Prasetyo",
   initials: "RAP",
-  url: "https://drive.google.com/file/d/1UMUCRsYaytWNCF_WhIIiQjB5ApOP3JJW/view?usp=sharing",
+  url: "https://drive.google.com/file/d/1AIUpdB7yR_Y37jkBU2scSoNSOr-aPoW9/view?usp=sharing",
   location: "Indonesia",
   locationLink: "https://www.google.com/maps/place/indonesia",
   description:
@@ -53,26 +53,39 @@ export const DATA = {
   work: [
     {
       company: "PRBCare Research - Muhammadiyah Magelang University",
-      href: "https://atomic.finance",
+      href: "",
       badges: [],
       location: "Hybrid",
       title: "Frontend Developer - Part Time",
       logoUrl: "/prbcare.png",
-      start: "Jul 2024",
+      start: "Jul",
       end: "Dec 2024",
       description:
         "I developed the PRBCare application using ReactJS as the frontend, collaborating with my supervisor and team to build a Single Page Application (SPA) that enhances the efficiency of health services. The application improves user experience by providing automatic notifications for patients, ensuring they stay informed about their health schedules. Additionally, I implemented a responsive design and integrated Progressive Web App (PWA) features to optimize accessibility and performance across various devices.",
     },
     {
+      company: "Presensimu Research - Muhammadiyah Magelang University",
+      href: "",
+      badges: [],
+      location: "Hybrid",
+      title: "Fullstack Developer - Part Time",
+      logoUrl: "",
+      start: "Jan",
+      end: "Jun 2025",
+      description:
+        "Developed a web-based attendance system with facial recognition using face-api.js and React.js, implementing backend services with Node.js, Express.js, and PostgreSQL, while collaborating with researchers to align features with research objectives.",
+    },
+    {
       company: "PT Winnicode Indonesia",
-      href: "https://atomic.finance",
+      href: "https://winnicode.com/",
       badges: [],
       location: "Remote",
       title: "Fullstack Developer - Internship",
       logoUrl: "/",
-      start: "Feb 2025",
+      start: "Feb",
       end: "May 2025",
-      description: "",
+      description:
+        "Developed a news portal frontend using React.js and Tailwind CSS, built RESTful backend APIs with Express.js and PostgreSQL, and implemented Redis caching to enhance performance and reduce server load.",
     },
   ],
   education: [
