@@ -153,7 +153,7 @@ export default function Chatbot() {
               </motion.div>
             </TooltipTrigger>
             <TooltipContent side="left" className="mb-2">
-              <p>Chat with Ryan's Assistant</p>
+              <p>Chat with Ryan&#39;s Assistant</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
