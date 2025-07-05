@@ -95,14 +95,14 @@ export const DATA = {
       degree: "Bachelor's Degree of Informatics Engineering",
       logoUrl: "/Unimma.png",
       start: "2022",
-      end: "now",
+      end: "Present",
     },
     {
       school: "Hacktiv8",
       href: "https://www.hacktiv8.com/",
       degree: "Reactjs for Front-End Developer",
       logoUrl: "/hacktiv8-logo.jpg",
-      start: "Sep 2024",
+      start: "Sep",
       end: "Dec 2024",
     },
   ],
@@ -110,7 +110,7 @@ export const DATA = {
     {
       title: "PRBCare",
       href: "https://prbcare.my.id",
-      dates: "Jul 2024 - Dec 2024",
+      dates: "Jul - Dec 2024",
       active: true,
       description:
         "PRBCare is a digital health solution designed to help users manage their medication intake and follow-up schedules efficiently.",
@@ -133,7 +133,7 @@ export const DATA = {
     {
       title: "Cartify",
       href: "https://cartify-ryan-adi-prasetyo.vercel.app/",
-      dates: "June 2023 - Present",
+      dates: "Sep - Dec 2024",
       active: true,
       description:
         "An e-commerce website aimed at providing a seamless online shopping experience. This project enabled me to apply my web development skills in creating a fully functional, dynamic, and user-friendly platform using modern technologies.",
@@ -156,7 +156,7 @@ export const DATA = {
     {
       title: "TickeTix",
       href: "",
-      dates: "Feb 2024 - Mar 2024",
+      dates: "Feb - Mar 2024",
       active: true,
       description:
         "Ticketix is an innovative platform powered by Internet Computer Protocol (ICP) that provides a secure, transparent, and decentralized ticketing system. By leveraging blockchain technology, Ticketix eliminates ticket fraud, ensures seamless ticket resale, and reduces costs by removing third-party intermediaries.",
@@ -207,19 +207,19 @@ export const DATA = {
     {
       title: "Intro to Software Engineering",
       issuer: "PT Revolusi Citra Edukasi",
-      dates: "March 2023",
+      dates: "Mar 2023",
       image: "/SE_RevoU.jpg",
     },
     {
       title: "Backend Development and APIs",
       issuer: "FreeCodeCamp",
-      dates: "January 2024",
+      dates: "Jan 2024",
       image: "/sertifikat_freecodecamp.jpg",
     },
     {
       title: "MSIB Batch 7 - ReactJS For Front End Website Developer",
       issuer: "PT Hacktivate Teknologi Indonesia",
-      dates: "December 2024",
+      dates: "Dec 2024",
       image: "/Sertifikat_hacktiv8.jpg",
     },
     {
