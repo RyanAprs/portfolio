@@ -4,7 +4,7 @@ import { FileBadge, HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Ryan Adi Prasetyo",
   initials: "RAP",
-  url: "https://drive.google.com/file/d/1zv4iblzXwQW4Sg1hCGALvK27LRWrHWah/view?usp=sharing",
+  url: "https://drive.google.com/file/d/1QYVARMYaoUT_zz6QQ0Dae8WLM5N6Shbh/view?usp=sharing",
   location: "Indonesia",
   locationLink: "https://www.google.com/maps/place/indonesia",
   description:
@@ -14,8 +14,10 @@ export const DATA = {
   avatarUrl: "/me.jpg",
   skills: [
     "React",
+    "React Native",
     "Next.js",
     "Typescript",
+    "Solidity",
     "Node.js",
     "Postgres",
     "MongoDB",
@@ -53,24 +55,24 @@ export const DATA = {
   },
   work: [
     {
-      company: "PRBCare Research - Muhammadiyah Magelang University",
+      company: "Muhammadiyah Magelang University",
       href: "",
       badges: [],
       location: "Hybrid",
       title: "Frontend Developer - Part Time",
-      logoUrl: "/prbcare.png",
+      logoUrl: "/Unimma.png",
       start: "Jul",
       end: "Dec 2024",
       description:
         "I developed the PRBCare application using ReactJS as the frontend, collaborating with my supervisor and team to build a Single Page Application (SPA) that enhances the efficiency of health services. The application improves user experience by providing automatic notifications for patients, ensuring they stay informed about their health schedules. Additionally, I implemented a responsive design and integrated Progressive Web App (PWA) features to optimize accessibility and performance across various devices.",
     },
     {
-      company: "Presensimu Research - Muhammadiyah Magelang University",
+      company: "Muhammadiyah Magelang University",
       href: "",
       badges: [],
       location: "Hybrid",
       title: "Fullstack Developer - Part Time",
-      logoUrl: "",
+      logoUrl: "/Unimma.png",
       start: "Jan",
       end: "Jun 2025",
       description:
@@ -82,11 +84,35 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Fullstack Developer - Internship",
-      logoUrl: "/",
+      logoUrl: "/winni.png",
       start: "Feb",
       end: "May 2025",
       description:
         "Developed a news portal frontend using React.js and Tailwind CSS, built RESTful backend APIs with Express.js and PostgreSQL, and implemented Redis caching to enhance performance and reduce server load.",
+    },
+    {
+      company: "Muhammadiyah Magelang University",
+      href: "",
+      badges: [],
+      location: "Hybrid",
+      title: "Blockchain Developer - Part Time",
+      logoUrl: "Unimma.png",
+      start: "May",
+      end: "Jul 2025",
+      description:
+        "Developed Certify, a blockchain-based academic certificate verification platform integrating Zero-Knowledge Proofs (ZKP), Solidity, and IPFS to ensure authenticity, privacy, and data security. Implemented smart contracts on the Internet Computer Protocol (ICP), integrated decentralized storage via Pinata IPFS, and designed frontend interfaces using React and Tailwind CSS.",
+    },
+    {
+      company: "Regional Secretariat of Magelang City",
+      href: "",
+      badges: [],
+      location: "Onsite",
+      title: "Fullstack Developer - Internship",
+      logoUrl: "logomgl.png",
+      start: "Sep",
+      end: "Oct 2025",
+      description:
+        "Developed information system interfaces using React.js and Tailwind CSS for the website and React Native for mobile apps. Built RESTful backend APIs using Express.js and PostgreSQL to support data management and system functionality.",
     },
   ],
   education: [
