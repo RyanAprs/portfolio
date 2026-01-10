@@ -53,6 +53,60 @@ export const DATA = {
       },
     },
   },
+  services: [
+    {
+      title: "Starter Landing Page",
+      price: "Rp 500.000 - Rp 900.000",
+      description:
+        "Perfect for personal branding, event promotions, or single-product showcases. A concise, high-impact single page to establish your online presence.",
+      features: [
+        "One-page Responsive Design",
+        "Hero, About, & Contact Sections",
+        "Direct WhatsApp Button Integration",
+        "Free .my.id Domain (1 Year)",
+        "2-3 Days Delivery",
+      ],
+    },
+    {
+      title: "Company Profile (SME)",
+      price: "Rp 1.500.000 - Rp 2.500.000",
+      description:
+        "Professional multi-page website designed to build credibility for businesses, agencies, and consultants.",
+      features: [
+        "Up to 5 Pages (Home, Services, Portfolio, etc.)",
+        "SEO Basic Optimization",
+        "Free .com/.id Domain (1 Year)",
+        "Professional Business Email Setup",
+        "CMS Integration (Easy to Edit)",
+      ],
+    },
+    {
+      title: "E-Commerce / Digital Catalog",
+      price: "Rp 3.000.000 - Rp 4.000.000",
+      description:
+        "Optimized for local sellers. Showcase your products with a catalog system and simplified checkout process via WhatsApp.",
+      features: [
+        "Product Catalog & Categories",
+        "WhatsApp Checkout Flow",
+        "Automatic Shipping Calculation (RajaOngkir)",
+        "User-friendly Product Management",
+        "Free Domain & Hosting Included",
+      ],
+    },
+    {
+      title: "Custom Web App / MVP",
+      price: "Rp 4.500.000 - Rp 5.000.000",
+      description:
+        "Tailored web applications for specific business needs, internal tools, or startup Minimum Viable Products (MVP).",
+      features: [
+        "Payment Gateway Integration(midtrans)",
+        "Database Design & Integration",
+        "Admin Dashboard & User Roles",
+        "PWA (Installable on Mobile)",
+        "REST API Development",
+      ],
+    },
+  ],
   work: [
     {
       company: "Muhammadiyah Magelang University",
