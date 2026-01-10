@@ -141,7 +141,8 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 10}>
             <div className="text-center mt-8">
               <p className="text-sm text-muted-foreground mb-4">
-                Need a custom solution? Let's discuss your project requirements.
+                Need a custom solution? Let&apos;s discuss your project
+                requirements.
               </p>
               <Button variant="outline" asChild>
                 <Link href={`mailto:${DATA.contact.email}`}>
