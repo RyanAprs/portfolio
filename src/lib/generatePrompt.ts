@@ -35,27 +35,27 @@ export function generatePrompt() {
     .map((cert) => `- "${cert.title}" by ${cert.issuer} (${cert.dates})`)
     .join("\n");
 
-  const services =
-    DATA.websitePackages
-      .map((service) => {
-        const features = service.features.map((f) => `  • ${f}`).join("\n");
-        return `• ${service.title} – ${service.price}
+  const servicesWebsite = DATA.websitePackages
+    .map((service) => {
+      const features = service.features.map((f) => `  • ${f}`).join("\n");
+      return `• ${service.title} – ${service.price}
       ${service.description}
       
       Key Features:
       ${features}`;
-      })
-      .join("\n\n") &&
-    DATA.mobileAppPackages
-      .map((service) => {
-        const features = service.features.map((f) => `  • ${f}`).join("\n");
-        return `• ${service.title} – ${service.price}
+    })
+    .join("\n\n");
+
+  const servicesMobileApp = DATA.mobileAppPackages
+    .map((service) => {
+      const features = service.features.map((f) => `  • ${f}`).join("\n");
+      return `• ${service.title} – ${service.price}
       ${service.description}
       
       Key Features:
       ${features}`;
-      })
-      .join("\n\n");
+    })
+    .join("\n\n");
 
   return `
 You are an AI assistant named "Ryan's Assistant" for Ryan Adi Prasetyo's personal portfolio website.
@@ -89,9 +89,9 @@ ${skills}
 ---
 
 💼 Services Offered:
-Ryan offers professional web development services with competitive pricing tailored for Indonesian market:
+Ryan offers professional web development & mobile app development services with competitive pricing tailored for Indonesian market:
 
-${services}
+${servicesWebsite}, ${servicesMobileApp}
 
 💡 Additional Information about Services:
 - All prices are negotiable based on project complexity and requirements
