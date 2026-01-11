@@ -35,16 +35,27 @@ export function generatePrompt() {
     .map((cert) => `- "${cert.title}" by ${cert.issuer} (${cert.dates})`)
     .join("\n");
 
-  const services = DATA.websitePackages
-    .map((service) => {
-      const features = service.features.map((f) => `  • ${f}`).join("\n");
-      return `• ${service.title} – ${service.price}
-  ${service.description}
-  
-  Key Features:
-${features}`;
-    })
-    .join("\n\n");
+  const services =
+    DATA.websitePackages
+      .map((service) => {
+        const features = service.features.map((f) => `  • ${f}`).join("\n");
+        return `• ${service.title} – ${service.price}
+      ${service.description}
+      
+      Key Features:
+      ${features}`;
+      })
+      .join("\n\n") &&
+    DATA.mobileAppPackages
+      .map((service) => {
+        const features = service.features.map((f) => `  • ${f}`).join("\n");
+        return `• ${service.title} – ${service.price}
+      ${service.description}
+      
+      Key Features:
+      ${features}`;
+      })
+      .join("\n\n");
 
   return `
 You are an AI assistant named "Ryan's Assistant" for Ryan Adi Prasetyo's personal portfolio website.
