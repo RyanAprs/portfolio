@@ -128,7 +128,7 @@ export default function Chatbot() {
 
   return (
     <>
-      <div className="fixed bottom-5 right-6 z-40 sm:bottom-5 sm:right-8">
+      <div className="fixed bottom-5 right-2 z-40 sm:bottom-5 sm:right-8">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>

@@ -35,7 +35,7 @@ export function generatePrompt() {
     .map((cert) => `- "${cert.title}" by ${cert.issuer} (${cert.dates})`)
     .join("\n");
 
-  const services = DATA.services
+  const services = DATA.websitePackages
     .map((service) => {
       const features = service.features.map((f) => `  • ${f}`).join("\n");
       return `• ${service.title} – ${service.price}
