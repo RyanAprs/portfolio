@@ -2,288 +2,76 @@ import { Language } from "@/context/LanguageContext";
 
 // Work Experience Translations
 export const workTranslations = {
-  frontend_dev_unimma_2024: {
-    title: {
-      en: "Frontend Developer - Part Time",
-      id: "Frontend Developer - Paruh Waktu",
-    },
-    description: {
-      en: "I developed the PRBCare application using ReactJS as the frontend, collaborating with my supervisor and team to build a Single Page Application (SPA) that enhances the efficiency of health services. The application improves user experience by providing automatic notifications for patients, ensuring they stay informed about their health schedules. Additionally, I implemented a responsive design and integrated Progressive Web App (PWA) features to optimize accessibility and performance across various devices.",
-      id: "Saya mengembangkan aplikasi PRBCare menggunakan ReactJS sebagai frontend, berkolaborasi dengan supervisor dan tim untuk membangun Single Page Application (SPA) yang meningkatkan efisiensi layanan kesehatan. Aplikasi ini meningkatkan pengalaman pengguna dengan menyediakan notifikasi otomatis untuk pasien, memastikan mereka tetap terinformasi tentang jadwal kesehatan mereka. Selain itu, saya menerapkan desain responsif dan mengintegrasikan fitur Progressive Web App (PWA) untuk mengoptimalkan aksesibilitas dan performa di berbagai perangkat.",
-    },
-  },
-  fullstack_dev_unimma_2025: {
-    title: {
-      en: "Fullstack Developer - Part Time",
-      id: "Fullstack Developer - Paruh Waktu",
-    },
-    description: {
-      en: "Developed a web-based attendance system with facial recognition using face-api.js and React.js, implementing backend services with Node.js, Express.js, and PostgreSQL, while collaborating with researchers to align features with research objectives.",
-      id: "Mengembangkan sistem absensi berbasis web dengan pengenalan wajah menggunakan face-api.js dan React.js, mengimplementasikan layanan backend dengan Node.js, Express.js, dan PostgreSQL, sambil berkolaborasi dengan peneliti untuk menyelaraskan fitur dengan tujuan penelitian.",
-    },
-  },
   fullstack_winnicode: {
     title: {
       en: "Fullstack Developer - Internship",
       id: "Fullstack Developer - Magang",
+      ja: "フルスタック開発者 - インターンシップ",
     },
     description: {
       en: "Developed a news portal frontend using React.js and Tailwind CSS, built RESTful backend APIs with Express.js and PostgreSQL, and implemented Redis caching to enhance performance and reduce server load.",
       id: "Mengembangkan frontend portal berita menggunakan React.js dan Tailwind CSS, membangun RESTful backend API dengan Express.js dan PostgreSQL, dan mengimplementasikan Redis caching untuk meningkatkan performa dan mengurangi beban server.",
+      ja: "React.jsとTailwind CSSを使ったニュースポータルのフロントエンドを開発し、Express.jsとPostgreSQLでRESTful APIを構築し、Redisキャッシュを実装してパフォーマンスを向上させました。",
     },
   },
-  blockchain_dev_unimma: {
+  lecturer_assistant_unimma: {
     title: {
-      en: "Blockchain Developer - Part Time",
-      id: "Blockchain Developer - Paruh Waktu",
+      en: "Lecturer Assistant - Part Time",
+      id: "Asisten Dosen - Paruh Waktu",
+      ja: "講師アシスタント - パートタイム",
     },
     description: {
-      en: "Developed Certify, a blockchain-based academic certificate verification platform integrating Zero-Knowledge Proofs (ZKP), Solidity, and IPFS to ensure authenticity, privacy, and data security. Implemented smart contracts on the Internet Computer Protocol (ICP), integrated decentralized storage via Pinata IPFS, and designed frontend interfaces using React and Tailwind CSS.",
-      id: "Mengembangkan Certify, platform verifikasi sertifikat akademik berbasis blockchain yang mengintegrasikan Zero-Knowledge Proofs (ZKP), Solidity, dan IPFS untuk memastikan keaslian, privasi, dan keamanan data. Mengimplementasikan smart contract pada Internet Computer Protocol (ICP), mengintegrasikan penyimpanan terdesentralisasi via Pinata IPFS, dan mendesain antarmuka frontend menggunakan React dan Tailwind CSS.",
+      en: "Assisted in delivering course materials and facilitating classroom sessions for programming-related subjects. Provided technical guidance and mentoring to students to improve their understanding of core concepts. Supported assessment processes, including assignment preparation and grading.",
+      id: "Membantu penyampaian materi kuliah dan fasilitasi sesi kelas untuk mata kuliah terkait pemrograman. Memberikan bimbingan teknis dan mentoring kepada mahasiswa untuk meningkatkan pemahaman mereka terhadap konsep inti. Mendukung proses penilaian, termasuk persiapan tugas dan penilaian.",
+      ja: "プログラミング関連科目の講義資料の提供と授業進行を支援しました。学生に技術的な指導とメンタリングを行い、コア概念の理解を深めました。課題作成と採点を含む評価プロセスをサポートしました。",
     },
   },
   fullstack_magelang: {
     title: {
       en: "Fullstack Developer - Internship",
       id: "Fullstack Developer - Magang",
+      ja: "フルスタック開発者 - インターンシップ",
     },
     description: {
-      en: "Developed information system interfaces using React.js and Tailwind CSS for the website and React Native for mobile apps. Built RESTful backend APIs using Express.js and PostgreSQL to support data management and system functionality.",
-      id: "Mengembangkan antarmuka sistem informasi menggunakan React.js dan Tailwind CSS untuk website dan React Native untuk aplikasi mobile. Membangun RESTful backend API menggunakan Express.js dan PostgreSQL untuk mendukung manajemen data dan fungsionalitas sistem.",
+      en: "Developed responsive web and mobile interfaces using React.js, Tailwind CSS, and React Native. Designed and implemented RESTful APIs using Express.js and PostgreSQL to support system functionality. Collaborated with cross-functional teams to deliver a government information system within project timelines.",
+      id: "Mengembangkan antarmuka web dan mobile responsif menggunakan React.js, Tailwind CSS, dan React Native. Merancang dan mengimplementasikan RESTful API menggunakan Express.js dan PostgreSQL untuk mendukung fungsionalitas sistem. Berkolaborasi dengan tim lintas fungsi untuk menghadirkan sistem informasi pemerintah sesuai tenggat waktu proyek.",
+      ja: "React.js、Tailwind CSS、React Nativeを使用してレスポンシブなウェブ・モバイルインターフェースを開発しました。Express.jsとPostgreSQLでRESTful APIを設計・実装し、政府情報システムをチームで納期内に完成させました。",
     },
   },
-};
-
-// Package Translations
-export const packageTranslations = {
-  starter: {
-    title: { en: "Starter", id: "Pemula" },
-    description: {
-      en: "Perfect for personal brand/UMKM who needs fast website",
-      id: "Sempurna untuk brand personal/UMKM yang membutuhkan website cepat",
-    },
-    features: {
-      en: [
-        "1-page landing page (responsive)",
-        "Domain + hosting for 1 year + SSL",
-        "Estimated completion: 2 working days",
-        "WhatsApp CTA + neat content structure",
-        "2x minor revision",
-        "Bonus: basic copywriting (concise & clear)",
-      ],
-      id: [
-        "Landing page 1 halaman (responsif)",
-        "Domain + hosting 1 tahun + SSL",
-        "Estimasi penyelesaian: 2 hari kerja",
-        "WhatsApp CTA + struktur konten rapi",
-        "2x revisi minor",
-        "Bonus: copywriting dasar (ringkas & jelas)",
-      ],
-    },
-    additional: {
-      en: "Annual renewal (domain+hosting): IDR 600.000",
-      id: "Perpanjangan tahunan (domain+hosting): IDR 600.000",
-    },
-  },
-  professional: {
-    title: { en: "Professional", id: "Profesional" },
-    description: {
-      en: "For businesses that want to appear confident & ready to scale",
-      id: "Untuk bisnis yang ingin tampil percaya diri & siap berkembang",
-    },
-    features: {
-      en: [
-        "4-page website (Home, About, Services, Contact)",
-        "Domain + 1-year hosting + SSL",
-        "Features: Lead form, WhatsApp, Google Maps",
-        "Admin access to edit content & add pages",
-        "Estimated completion: 7 working days",
-        "3x minor revision",
-        "Bonus: basic copywriting",
-      ],
-      id: [
-        "Website 4 halaman (Beranda, Tentang, Layanan, Kontak)",
-        "Domain + hosting 1 tahun + SSL",
-        "Fitur: Form lead, WhatsApp, Google Maps",
-        "Akses admin untuk edit konten & tambah halaman",
-        "Estimasi penyelesaian: 7 hari kerja",
-        "3x revisi minor",
-        "Bonus: copywriting dasar",
-      ],
-    },
-    additional: {
-      en: "Annual renewal (domain+hosting): IDR 1,000,000",
-      id: "Perpanjangan tahunan (domain+hosting): IDR 1.000.000",
-    },
-  },
-  ecommerce: {
+  serenade_story: {
     title: {
-      en: "E-Commerce / Digital Catalog",
-      id: "E-Commerce / Katalog Digital",
+      en: "Frontend Developer - Internship",
+      id: "Frontend Developer - Magang",
+      ja: "フロントエンド開発者 - インターンシップ",
     },
     description: {
-      en: "Suitable for MSMEs that need a product catalog + detail page",
-      id: "Cocok untuk UMKM yang membutuhkan katalog produk + halaman detail",
-    },
-    features: {
-      en: [
-        "4-page Website + Product Catalog",
-        "Domain + 1-year hosting + SSL",
-        "Features: Lead form, WhatsApp, Google Maps",
-        "Admin panel to add/edit products",
-        "Estimated completion time: 10 working days",
-        "3x minor revision",
-        "Bonus: basic copywriting",
-      ],
-      id: [
-        "Website 4 halaman + Katalog Produk",
-        "Domain + hosting 1 tahun + SSL",
-        "Fitur: Form lead, WhatsApp, Google Maps",
-        "Panel admin untuk tambah/edit produk",
-        "Estimasi waktu penyelesaian: 10 hari kerja",
-        "3x revisi minor",
-        "Bonus: copywriting dasar",
-      ],
-    },
-    additional: {
-      en: "Annual renewal (domain+hosting): IDR 1,500,000",
-      id: "Perpanjangan tahunan (domain+hosting): IDR 1.500.000",
+      en: "Developed and maintained the adainacara.com platform with a focus on performance and scalability. Built responsive and user-friendly interfaces using modern frontend technologies. Optimized UI/UX to enhance user engagement and overall application performance.",
+      id: "Mengembangkan dan memelihara platform adainacara.com dengan fokus pada performa dan skalabilitas. Membangun antarmuka responsif dan ramah pengguna menggunakan teknologi frontend modern. Mengoptimalkan UI/UX untuk meningkatkan keterlibatan pengguna dan performa aplikasi secara keseluruhan.",
+      ja: "パフォーマンスとスケーラビリティに重点を置いてadainacara.comプラットフォームを開発・保守しました。モダンなフロントエンド技術でレスポンシブなUIを構築し、ユーザーエンゲージメントを向上させました。",
     },
   },
-  ai_automation: {
-    title: { en: "AI Business Automation", id: "Otomasi Bisnis AI" },
+  hello_friday: {
+    title: {
+      en: "Fullstack Developer - Freelance",
+      id: "Fullstack Developer - Freelance",
+      ja: "フルスタック開発者 - フリーランス",
+    },
     description: {
-      en: "Website + 24/7 Smart Employee (AI Chatbot) to handle customers.",
-      id: "Website + Karyawan Pintar 24/7 (AI Chatbot) untuk menangani pelanggan.",
-    },
-    features: {
-      en: [
-        "All features in Professional Plan",
-        "Custom AI Chatbot trained on your data",
-        "Auto-reply FAQ & Pricing inquiries 24/7",
-        "Seamless Human Handoff (if needed)",
-        "Chat history & Customer insights dashboard",
-        "Estimated completion: 14 working days",
-        "Bonus: 1-month free AI token usage limit",
-      ],
-      id: [
-        "Semua fitur di Paket Profesional",
-        "AI Chatbot khusus dilatih dengan data Anda",
-        "Balas otomatis FAQ & pertanyaan harga 24/7",
-        "Pengalihan ke manusia dengan mulus (jika diperlukan)",
-        "Riwayat chat & dashboard wawasan pelanggan",
-        "Estimasi penyelesaian: 14 hari kerja",
-        "Bonus: batas penggunaan token AI gratis 1 bulan",
-      ],
-    },
-    additional: {
-      en: "Renewal: IDR 1,500,000 + AI API Cost (usage based)",
-      id: "Perpanjangan: IDR 1.500.000 + Biaya AI API (berbasis penggunaan)",
+      en: "Engineered and deployed slidepedia.com as a fullstack web application. Designed and developed internal systems for designer task management and employee payment processing to streamline operational workflows. Built scalable backend architecture and optimized database performance to support business growth and efficiency.",
+      id: "Membangun dan mendeploy slidepedia.com sebagai aplikasi web fullstack. Merancang dan mengembangkan sistem internal untuk manajemen tugas desainer dan pemrosesan pembayaran karyawan guna menyederhanakan alur kerja operasional. Membangun arsitektur backend yang skalabel dan mengoptimalkan performa database untuk mendukung pertumbuhan bisnis.",
+      ja: "slidepedia.comをフルスタックウェブアプリとして開発・デプロイしました。デザイナー業務管理と従業員給与処理の内部システムを設計し、業務効率化を実現。スケーラブルなバックエンドとデータベース最適化で事業成長を支援しました。",
     },
   },
-  basic_mobile: {
-    title: { en: "Basic Mobile App", id: "Aplikasi Mobile Dasar" },
+  ailesh: {
+    title: {
+      en: "Fullstack Developer - Contract",
+      id: "Fullstack Developer - Kontrak",
+      ja: "フルスタック開発者 - 契約",
+    },
     description: {
-      en: "Simple mobile app for Android & iOS with essential features",
-      id: "Aplikasi mobile sederhana untuk Android & iOS dengan fitur esensial",
-    },
-    features: {
-      en: [
-        "Cross-platform (Android & iOS)",
-        "Up to 5 screens with basic navigation",
-        "User authentication (login/register)",
-        "API integration for data management",
-        "Push notification setup",
-        "Estimated completion: 14 working days",
-        "3x minor revision",
-        "App deployment guidance",
-      ],
-      id: [
-        "Cross-platform (Android & iOS)",
-        "Hingga 5 layar dengan navigasi dasar",
-        "Autentikasi pengguna (login/register)",
-        "Integrasi API untuk manajemen data",
-        "Setup notifikasi push",
-        "Estimasi penyelesaian: 14 hari kerja",
-        "3x revisi minor",
-        "Panduan deployment aplikasi",
-      ],
-    },
-    additional: {
-      en: "Maintenance: IDR 500.000/month (optional)",
-      id: "Pemeliharaan: IDR 500.000/bulan (opsional)",
-    },
-  },
-  business_mobile: {
-    title: { en: "Business Mobile App", id: "Aplikasi Mobile Bisnis" },
-    description: {
-      en: "Feature-rich mobile app for growing businesses",
-      id: "Aplikasi mobile kaya fitur untuk bisnis yang berkembang",
-    },
-    features: {
-      en: [
-        "All features in Basic Plan",
-        "Up to 10 screens with advanced navigation",
-        "Real-time database integration",
-        "In-app payments integration",
-        "Advanced analytics dashboard",
-        "Offline mode capability",
-        "Estimated completion: 21 working days",
-        "5x minor revision",
-        "App Store & Play Store submission",
-      ],
-      id: [
-        "Semua fitur di Paket Dasar",
-        "Hingga 10 layar dengan navigasi lanjutan",
-        "Integrasi database real-time",
-        "Integrasi pembayaran dalam aplikasi",
-        "Dashboard analitik lanjutan",
-        "Kemampuan mode offline",
-        "Estimasi penyelesaian: 21 hari kerja",
-        "5x revisi minor",
-        "Pengajuan ke App Store & Play Store",
-      ],
-    },
-    additional: {
-      en: "Maintenance: IDR 800.000/month (optional)",
-      id: "Pemeliharaan: IDR 800.000/bulan (opsional)",
-    },
-  },
-  enterprise_mobile: {
-    title: { en: "Enterprise Mobile App", id: "Aplikasi Mobile Enterprise" },
-    description: {
-      en: "Custom enterprise solution with advanced features",
-      id: "Solusi enterprise khusus dengan fitur lanjutan",
-    },
-    features: {
-      en: [
-        "All features in Business Plan",
-        "Unlimited screens & custom features",
-        "Multi-language support",
-        "Advanced security (encryption, biometric)",
-        "Backend API development included",
-        "Admin panel for content management",
-        "Third-party integrations (maps, social, etc)",
-        "Estimated completion: 30+ working days",
-        "Unlimited revision during development",
-        "1-month post-launch support",
-      ],
-      id: [
-        "Semua fitur di Paket Bisnis",
-        "Layar tak terbatas & fitur khusus",
-        "Dukungan multi-bahasa",
-        "Keamanan lanjutan (enkripsi, biometrik)",
-        "Pengembangan backend API termasuk",
-        "Panel admin untuk manajemen konten",
-        "Integrasi pihak ketiga (maps, social, dll)",
-        "Estimasi penyelesaian: 30+ hari kerja",
-        "Revisi tak terbatas selama pengembangan",
-        "Dukungan 1 bulan pasca-peluncuran",
-      ],
-    },
-    additional: {
-      en: "Maintenance: IDR 1,500,000/month (optional)",
-      id: "Pemeliharaan: IDR 1.500.000/bulan (opsional)",
+      en: "Developed an internal ERP system to streamline business operations. Implemented fullstack features, including API development and database integration. Ensured system reliability and alignment with business requirements through continuous testing and iteration.",
+      id: "Mengembangkan sistem ERP internal untuk menyederhanakan operasional bisnis. Mengimplementasikan fitur fullstack, termasuk pengembangan API dan integrasi database. Memastikan keandalan sistem dan keselarasan dengan kebutuhan bisnis melalui pengujian dan iterasi berkelanjutan.",
+      ja: "業務効率化のための社内ERPシステムを開発しました。API開発とデータベース統合を含むフルスタック機能を実装し、継続的なテストと改善によってシステムの信頼性を確保しました。",
     },
   },
 };
@@ -294,24 +82,28 @@ export const projectTranslations = {
     description: {
       en: "PRBCare is a digital health solution designed to help users manage their medication intake and follow-up schedules efficiently.",
       id: "PRBCare adalah solusi kesehatan digital yang dirancang untuk membantu pengguna mengelola jadwal minum obat dan kontrol dengan efisien.",
+      ja: "PRBCareは、ユーザーが服薬スケジュールとフォローアップを効率的に管理できるデジタルヘルスソリューションです。",
     },
   },
   cartify: {
     description: {
       en: "An e-commerce website aimed at providing a seamless online shopping experience. This project enabled me to apply my web development skills in creating a fully functional, dynamic, and user-friendly platform using modern technologies.",
       id: "Website e-commerce yang bertujuan memberikan pengalaman belanja online yang mulus. Proyek ini memungkinkan saya menerapkan keterampilan pengembangan web dalam membuat platform yang fungsional, dinamis, dan ramah pengguna menggunakan teknologi modern.",
+      ja: "シームレスなオンラインショッピング体験を提供するECサイトです。このプロジェクトを通じて、モダン技術を使った機能的でユーザーフレンドリーなプラットフォームを構築するウェブ開発スキルを活かしました。",
     },
   },
   ticketix: {
     description: {
       en: "Ticketix is an innovative platform powered by Internet Computer Protocol (ICP) that provides a secure, transparent, and decentralized ticketing system. By leveraging blockchain technology, Ticketix eliminates ticket fraud, ensures seamless ticket resale, and reduces costs by removing third-party intermediaries.",
       id: "Ticketix adalah platform inovatif yang didukung oleh Internet Computer Protocol (ICP) yang menyediakan sistem tiket yang aman, transparan, dan terdesentralisasi. Dengan memanfaatkan teknologi blockchain, Ticketix menghilangkan penipuan tiket, memastikan penjualan kembali tiket yang mulus, dan mengurangi biaya dengan menghilangkan perantara pihak ketiga.",
+      ja: "TicketixはICP（Internet Computer Protocol）を活用した革新的なプラットフォームで、安全・透明・分散型のチケットシステムを提供します。ブロックチェーン技術によりチケット詐欺を排除し、再販売を容易にし、中間業者をなくしてコストを削減します。",
     },
   },
   jelajah_nusantara: {
     description: {
       en: "Jelajah Nusantara is a fun, interactive website that helps users explore Indonesia's rich nature, culture, and history. It features a vibrant homepage, clickable interactive map, cultural facts, historical insights, and a team intro. Designed to be child-friendly and colorful, it's perfect for schools, museums, e-learning, and cultural tourism.",
       id: "Jelajah Nusantara adalah website interaktif yang menyenangkan yang membantu pengguna menjelajahi kekayaan alam, budaya, dan sejarah Indonesia. Website ini menampilkan homepage yang hidup, peta interaktif yang dapat diklik, fakta budaya, wawasan sejarah, dan intro tim. Dirancang ramah anak dan penuh warna, sangat cocok untuk sekolah, museum, e-learning, dan wisata budaya.",
+      ja: "Jelajah Nusantaraはインドネシアの豊かな自然・文化・歴史を探索できる楽しいインタラクティブサイトです。鮮やかなホームページ、クリック可能な地図、文化的事実、歴史的洞察を特徴として、学校や博物館、eラーニング、文化観光に最適です。",
     },
   },
 };
@@ -322,12 +114,14 @@ export const educationTranslations = {
     degree: {
       en: "Bachelor's Degree of Informatics Engineering",
       id: "Sarjana Teknik Informatika",
+      ja: "情報工学学士",
     },
   },
   hacktiv8: {
     degree: {
       en: "ReactJS for Front-End Developer",
       id: "ReactJS untuk Front-End Developer",
+      ja: "フロントエンド開発者のためのReactJS",
     },
   },
 };
@@ -338,33 +132,37 @@ export const achievementTranslations = {
     title: {
       en: "Intro to Software Engineering",
       id: "Pengenalan Rekayasa Perangkat Lunak",
+      ja: "ソフトウェアエンジニアリング入門",
     },
   },
   backend_apis: {
     title: {
       en: "Backend Development and APIs",
       id: "Pengembangan Backend dan API",
+      ja: "バックエンド開発とAPI",
     },
   },
   msib_hacktiv8: {
     title: {
       en: "MSIB Batch 7 - ReactJS For Front End Website Developer",
       id: "MSIB Batch 7 - ReactJS Untuk Pengembang Website Front End",
+      ja: "MSIB バッチ7 - フロントエンドウェブ開発者のためのReactJS",
     },
   },
   web_design_winner: {
     title: {
       en: "3rd Winner of Web Design at Festival Sistem Informasi 3.0 IPI Garut",
       id: "Juara 3 Web Design pada Festival Sistem Informasi 3.0 IPI Garut",
+      ja: "Festival Sistem Informasi 3.0 IPI Garut ウェブデザイン部門 3位入賞",
     },
   },
 };
 
 // Helper function to get translation
 export function getTranslation(
-  translations: Record<string, { en: string; id: string }>,
+  translations: Record<string, { en: string; id: string; ja: string }>,
   key: string,
-  language: Language
+  language: Language,
 ): string {
   return translations[key]?.[language] || key;
 }

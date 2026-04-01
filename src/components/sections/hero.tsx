@@ -1,14 +1,19 @@
+"use client";
+
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/lib/i18n/Translations";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export function HeroSection() {
+  const { language } = useLanguage();
+
   return (
     <section id="hero">
       <div className="mx-auto w-full max-w-2xl space-y-8">
@@ -23,7 +28,7 @@ export function HeroSection() {
             <BlurFadeText
               className="max-w-[600px] md:text-xl"
               delay={BLUR_FADE_DELAY}
-              text={DATA.description}
+              text={translations["hero.description"][language]}
             />
           </div>
           <BlurFade delay={BLUR_FADE_DELAY}>
@@ -34,7 +39,6 @@ export function HeroSection() {
           </BlurFade>
         </div>
 
-        {/* Update Bagian Tombol Disini */}
         <BlurFade delay={BLUR_FADE_DELAY}>
           <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-fit">
             <Button
@@ -45,19 +49,8 @@ export function HeroSection() {
             >
               <a href={DATA.url} target="_blank" rel="noopener noreferrer">
                 <span>My CV</span>
-              </a>
-            </Button>
-
-            <Button
-              variant="outline"
-              size="lg"
-              className="group flex items-center gap-2"
-              asChild
-            >
-              <Link href="/services">
-                <span>Services</span>
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
             </Button>
           </div>
         </BlurFade>

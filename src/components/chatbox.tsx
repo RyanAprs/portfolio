@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useChat } from "ai/react";
 import { cn } from "@/lib/utils";
+import ReactMarkdown from "react-markdown";
 import {
   Tooltip,
   TooltipContent,
@@ -22,19 +23,34 @@ export default function Chatbot() {
   const [isMinimized, setIsMinimized] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const { messages, input, handleInputChange, handleSubmit, isLoading, error } =
-    useChat({
-      api: "/api/chat",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      onError: (error) => {
-        console.error("Chat error:", error);
-      },
-      onFinish: (message) => {
-        console.log("Chat finished:", message);
-      },
-    });
+  const suggestions = [
+    { label: "🛠️ Skills", text: "What are Ryan's technical skills?" },
+    { label: "🚀 Projects", text: "Tell me about Ryan's projects" },
+    { label: "💼 Experience", text: "What is Ryan's work experience?" },
+    { label: "📧 Contact", text: "How can I contact or hire Ryan?" },
+  ];
+
+  const {
+    messages,
+    input,
+    handleInputChange,
+    handleSubmit,
+    isLoading,
+    error,
+    append,
+  } = useChat({
+    api: "/api/chat",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    onError: (error) => {
+      console.error("Chat error:", error);
+    },
+  });
+
+  const handleSuggestion = (text: string) => {
+    append({ role: "user", content: text });
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -172,7 +188,7 @@ export default function Chatbot() {
               variants={minimizeVariants}
               animate={isMinimized ? "minimized" : "expanded"}
               className={cn(
-                "w-80 sm:w-96 flex flex-col shadow-2xl max-w-[calc(100vw-3rem)] sm:max-w-none overflow-hidden"
+                "w-80 sm:w-96 flex flex-col shadow-2xl max-w-[calc(100vw-3rem)] sm:max-w-none overflow-hidden",
               )}
             >
               <Card className="h-full flex flex-col">
@@ -233,16 +249,29 @@ export default function Chatbot() {
                               initial={{ opacity: 0, y: 10 }}
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ delay: 0.2, duration: 0.3 }}
-                              className="text-center text-muted-foreground text-sm py-8"
+                              className="flex flex-col items-center text-muted-foreground text-sm py-6 gap-3"
                             >
-                              <Bot className="h-8 w-8 mx-auto mb-2 opacity-50" />
-                              <p>
-                                Send a message to start conversation with me
-                              </p>
-                              <p className="text-xs mt-1">
-                                You can ask anything about work, or anything
-                                else you want to know
-                              </p>
+                              <Bot className="h-8 w-8 opacity-50" />
+                              <div className="text-center">
+                                <p className="font-medium">
+                                  Hi! I&apos;m Ryan&apos;s Assistant 👋
+                                </p>
+                                <p className="text-xs mt-1 opacity-70">
+                                  Ask me anything — about Ryan, tech, or just
+                                  say hi!
+                                </p>
+                              </div>
+                              <div className="grid grid-cols-2 gap-2 w-full mt-1">
+                                {suggestions.map((s) => (
+                                  <button
+                                    key={s.label}
+                                    onClick={() => handleSuggestion(s.text)}
+                                    className="text-xs px-2 py-2 rounded-lg border border-border bg-muted/50 hover:bg-muted transition-colors text-left leading-tight cursor-pointer"
+                                  >
+                                    {s.label}
+                                  </button>
+                                ))}
+                              </div>
                             </motion.div>
                           )}
 
@@ -272,7 +301,7 @@ export default function Chatbot() {
                               }}
                               className={cn(
                                 "flex gap-2 max-w-[85%]",
-                                message.role === "user" ? "ml-auto" : "mr-auto"
+                                message.role === "user" ? "ml-auto" : "mr-auto",
                               )}
                             >
                               {message.role === "assistant" && (
@@ -285,13 +314,19 @@ export default function Chatbot() {
 
                               <div
                                 className={cn(
-                                  "rounded-lg px-3 py-2 text-sm break-words whitespace-pre-wrap",
+                                  "rounded-lg px-3 py-2 text-sm break-words",
                                   message.role === "user"
-                                    ? "bg-primary text-primary-foreground ml-auto"
-                                    : "bg-muted"
+                                    ? "bg-primary text-primary-foreground ml-auto whitespace-pre-wrap"
+                                    : "bg-muted prose prose-sm dark:prose-invert max-w-none prose-p:my-1 prose-ul:my-1 prose-li:my-0 prose-headings:my-1",
                                 )}
                               >
-                                {message.content}
+                                {message.role === "user" ? (
+                                  message.content
+                                ) : (
+                                  <ReactMarkdown>
+                                    {message.content}
+                                  </ReactMarkdown>
+                                )}
                               </div>
 
                               {message.role === "user" && (
